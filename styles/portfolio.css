@@ -26,7 +26,7 @@ p {
 .hero {
   text-align: center;
   background-color: var(--secondary-color);
-  padding: 160px 20px;
+  padding: 20px 40px;
 }
 .hero h1 {
   font-size: 96px;
@@ -117,7 +117,7 @@ p {
     font-size: 20px;
   }
   .hero {
-    padding: 80px 20px;
+    padding: 10px 10px;
   }
   .container .project-description,
   .work-inquiry {
@@ -153,6 +153,23 @@ p {
     margin-left: 0;
   }
 }
+@media (max-width: 393px) {
+  .d-block {
+    display: none !important;
+  }
+
+  .d-flex {
+    justify-content: center !important;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 280px) {
+  nav li a {
+    font-size: 11px;
+  }
+}
 
 .project-description {
   padding-left: 60px;
@@ -182,4 +199,27 @@ p {
 
 .work-inquiry-about-section {
   margin-left: 30px;
+}
+.logo {
+  max-height: 42px;
+}
+nav li {
+  display: inline;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--default-font-family);
+  opacity: 0.7;
+}
+nav {
+  padding: 20px 20px;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
 }
